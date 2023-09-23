@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Imported-From: https://github.com/srkndenis/local_manifests/blob/lineage-18.1/local_manifests.xml -->
+
+<manifest>
+
+    <!-- Samsung MSM8916 Common Repos -->
+    <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github" revision="lineage-18.1"/>
+
+    <!-- Samsung Hardware Repo -->
+    <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="lineage-18.1"/>
+
+    <!-- GCC 7.2 arm-eabi -->
+    <!-- OK so now you may want to install multilib ... -->
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" remote="github" revision="master"/>
+
+    <project name="LineageOS/android_external_bson" path="external/bson" remote="github" revision="lineage-18.1" />
+    <project name="LineageOS/android_system_qcom" path="system/qcom" remote="github" revision="lineage-18.1" />
+    <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" revision="lineage-18.1" />
+    <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="lineage-18.1" />
+
+</manifest>
