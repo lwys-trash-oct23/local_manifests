@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+  <remote  name="github"
+           fetch="https://ghps.cc/https://github.com" />
+
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
+
+  <remote  name="aosp"
+           fetch="https://mirrors.tuna.tsinghua.edu.cn/git/AOSP" />
+
+</manifest>
