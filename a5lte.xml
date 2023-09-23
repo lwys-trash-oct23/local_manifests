@@ -19,4 +19,10 @@
     <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" revision="lineage-18.1" />
     <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="lineage-18.1" />
 
+    <!-- --------------- -->
+
+    <project name="lwys-trash-oct23/device_samsung_a5lte" path="device/samsung/a5lte" remote="github" revision="lineage-18.1" />
+    <project name="ChronoMonochrome/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" remote="github" revision="lineage-18.1" />
+    <project name="ChronoMonochrome/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="lineage-18.1" />
+
 </manifest>
