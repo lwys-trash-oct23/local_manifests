@@ -5,24 +5,26 @@
 <manifest>
 
     <!-- Samsung MSM8916 Common Repos -->
-    <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github" revision="lineage-18.1"/>
+    <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common"/>
 
     <!-- Samsung Hardware Repo -->
-    <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="lineage-18.1"/>
+    <project path="hardware/samsung" name="LineageOS/android_hardware_samsung"/>
 
     <!-- GCC 7.2 arm-eabi -->
     <!-- OK so now you may want to install multilib ... -->
-    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" remote="github" revision="master"/>
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" revision="master"/>
 
-    <project name="LineageOS/android_external_bson" path="external/bson" remote="github" revision="lineage-18.1" />
-    <project name="LineageOS/android_system_qcom" path="system/qcom" remote="github" revision="lineage-18.1" />
-    <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" revision="lineage-18.1" />
-    <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="lineage-18.1" />
+    <project name="LineageOS/android_external_bson" path="external/bson" />
+    <project name="LineageOS/android_system_qcom" path="system/qcom" />
+    <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" />
+    <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" />
 
     <!-- -->
 
-    <project name="lwys-trash-oct23/device_samsung_a5lte" path="device/samsung/a5lte" remote="github" revision="lineage-18.1" />
-    <project name="ChronoMonochrome/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" remote="github" revision="lineage-18.1" />
-    <project name="ChronoMonochrome/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="lineage-18.1" />
+    <project name="lwys-trash-oct23/device_samsung_a5lte" path="device/samsung/a5lte" revision="lineage-18.1" />
+    <project name="ChronoMonochrome/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" revision="lineage-18.1" />
+    <project name="ChronoMonochrome/proprietary_vendor_samsung" path="vendor/samsung" revision="lineage-18.1" />
 
+    <!-- twrp -->
+    <project path="bootable/recovery-twrp" name="TeamWin/android_bootable_recovery" revision="android-12.1" groups="pdk" />
 </manifest>
