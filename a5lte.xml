@@ -5,19 +5,26 @@
 <manifest>
 
     <!-- Samsung MSM8916 Common Repos -->
-    <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common"/>
+    <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common"
+        revision="lineage-20" /> <!-- it be like that -->
 
     <!-- Samsung Hardware Repo -->
-    <project path="hardware/samsung" name="LineageOS/android_hardware_samsung"/>
+    <project path="hardware/samsung" name="LineageOS/android_hardware_samsung"
+        revision="lineage-20" />
 
     <!-- GCC 7.2 arm-eabi -->
     <!-- OK so now you may want to install multilib ... -->
     <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" revision="master"/>
 
-    <project name="LineageOS/android_external_bson" path="external/bson" />
-    <project name="LineageOS/android_system_qcom" path="system/qcom" />
-    <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" />
-    <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" />
+    <project name="LineageOS/android_external_bson" path="external/bson" 
+        revision="lineage-20" />
+    <project name="LineageOS/android_system_qcom" path="system/qcom"
+        revision="lineage-20" />
+    <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep"
+        revision="lineage-20" />
+    <!-- TODO: avoid -->
+    <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat"
+        revision="lineage-18.1" />
 
     <!-- -->
 
@@ -26,5 +33,5 @@
     <project name="ChronoMonochrome/proprietary_vendor_samsung" path="vendor/samsung" revision="lineage-18.1" />
 
     <!-- twrp -->
-    <!--<project path="bootable/recovery-twrp" name="TeamWin/android_bootable_recovery" revision="android-11" groups="pdk" />-->
+    <!--<project path="bootable/recovery-twrp" name="TeamWin/android_bootable_recovery" revision="android-12.1" />-->
 </manifest>
