@@ -16,6 +16,9 @@
     <!-- OK so now you may want to install multilib ... -->
     <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" revision="master"/>
 
+    <!-- not in 20.0 but we still use it -->
+    <project name="LineageOS/android_system_tools_dtbtool" path="system/tools/dtbtool" revision="lineage-18.1" />
+
     <project name="LineageOS/android_external_bson" path="external/bson" 
         revision="lineage-20" />
     <project name="LineageOS/android_system_qcom" path="system/qcom"
