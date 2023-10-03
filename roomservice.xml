@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- Imported-From: https://github.com/srkndenis/local_manifests/blob/lineage-18.1/local_manifests.xml -->
-
 <manifest>
+    <!-- Imported-From: https://github.com/srkndenis/local_manifests/blob/lineage-18.1/local_manifests.xml -->
+    <!-- TODO: move these to lineage.dependencies -->
 
     <!-- Samsung MSM8916 Common Repos -->
     <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common"
@@ -20,18 +20,14 @@
         revision="lineage-20" />
     <project name="LineageOS/android_system_qcom" path="system/qcom"
         revision="lineage-20" />
+
     <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep"
         revision="lineage-20" />
     <!-- TODO: avoid -->
     <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat"
         revision="lineage-18.1" />
 
-    <!-- -->
-
     <project name="lwys-trash-oct23/device_samsung_a5lte" path="device/samsung/a5lte" revision="lineage-18.1" />
     <project name="ChronoMonochrome/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" revision="lineage-18.1" />
     <project name="ChronoMonochrome/proprietary_vendor_samsung" path="vendor/samsung" revision="lineage-18.1" />
-
-    <!-- twrp -->
-    <!--<project path="bootable/recovery-twrp" name="TeamWin/android_bootable_recovery" revision="android-12.1" />-->
 </manifest>
