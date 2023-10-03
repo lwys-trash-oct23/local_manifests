@@ -4,6 +4,11 @@
     <!-- Imported-From: https://github.com/srkndenis/local_manifests/blob/lineage-18.1/local_manifests.xml -->
     <!-- TODO: move these to lineage.dependencies -->
 
+    <!-- For the build fix, temporary measure -->
+    <remove-project path="hardware/qcom-caf/wlan" />
+    <project path="hardware/qcom-caf/wlan" name="lwys-trash-oct23/android_hardware_qcom_wlan"
+        revision="lineage-20.0-caf" />
+
     <!-- Samsung MSM8916 Common Repos -->
     <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common"
         revision="lineage-20" /> <!-- it be like that -->
