@@ -23,9 +23,9 @@
 
     <!-- not in 20.0 but we still use these -->
     <project name="LineageOS/android_system_tools_dtbtool" path="system/tools/dtbtool" revision="lineage-18.1" />
-    <project name="LineageOS/android_hardware_qcom_audio" path="hardware/qcom-caf/msm8916/audio" revision="lineage-19.0-caf-msm8916" />
+    <project name="lwys-trash-oct23/android_hardware_qcom_audio" path="hardware/qcom-caf/msm8916/audio" revision="lineage-20.0-caf-msm8916" />
     <project name="LineageOS/android_hardware_qcom_media" path="hardware/qcom-caf/msm8916/media" revision="lineage-19.0-caf-msm8916" />
-    <project name="LineageOS/android_hardware_qcom_display" path="hardware/qcom-caf/msm8916/display" revision="lineage-19.0-caf-msm8916" />
+    <project name="lwys-trash-oct23/android_hardware_qcom_display" path="hardware/qcom-caf/msm8916/display" revision="lineage-20.0-caf-msm8916" />
     <extend-project name="LineageOS/android_hardware_qcom-caf_common">
         <!-- add guards for CAF repositories -->
         <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8916/Android.bp" />
