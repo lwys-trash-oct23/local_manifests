@@ -26,6 +26,11 @@
     <project name="LineageOS/android_hardware_qcom_audio" path="hardware/qcom-caf/msm8916/audio" revision="lineage-19.0-caf-msm8916" />
     <project name="LineageOS/android_hardware_qcom_media" path="hardware/qcom-caf/msm8916/media" revision="lineage-19.0-caf-msm8916" />
     <project name="LineageOS/android_hardware_qcom_display" path="hardware/qcom-caf/msm8916/display" revision="lineage-19.0-caf-msm8916" />
+    <extend-project name="LineageOS/android_hardware_qcom-caf_common">
+        <!-- add guards for CAF repositories -->
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8916/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8916/Android.mk" />
+    </extend-project>
 
     <project name="LineageOS/android_external_bson" path="external/bson" 
         revision="lineage-20" />
