@@ -1,30 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- Imported-From: https://github.com/srkndenis/local_manifests/blob/lineage-18.1/local_manifests.xml -->
-
 <manifest>
+    <remote name="lineage" fetch="https://github.com"/>
+    <remote name="github" fetch="https://github.com"/>
+    <remote name="githubm" fetch="https://ghps.cc/https://github.com"/>
 
     <!-- Samsung MSM8916 Common Repos -->
-    <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common"/>
+    <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" revision="lineage-18.1" remote="lineage"/>
+    <project name="LineageOS/android_hardware_qcom_audio" path="hardware/qcom-caf/msm8916/audio" revision="lineage-18.1-caf-msm8916" remote="lineage"/>
+    <project name="LineageOS/android_hardware_qcom_media" path="hardware/qcom-caf/msm8916/media" revision="lineage-18.1-caf-msm8916" remote="lineage"/>
+    <project name="LineageOS/android_hardware_qcom_display" path="hardware/qcom-caf/msm8916/display" revision="lineage-18.1-caf-msm8916" remote="lineage"/>
+    <project path="vendor/qcom/opensource/audio" name="LineageOS/android_vendor_qcom_opensource_audio" revision="lineage-18.1" remote="lineage"/>
 
     <!-- Samsung Hardware Repo -->
-    <project path="hardware/samsung" name="LineageOS/android_hardware_samsung"/>
+    <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" revision="lineage-18.1" remote="lineage"/>
+    <project path="hardware/google/pixel" name="LineageOS/android_hardware_google_pixel" revision="lineage-18.1" remote="lineage"/>
+    <project path="hardware/google/interfaces" name="platform/hardware/google/interfaces" groups="pdk" remote="aosp"/>
 
     <!-- GCC 7.2 arm-eabi -->
     <!-- OK so now you may want to install multilib ... -->
-    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" revision="master"/>
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" revision="master" remote="githubm"/>
 
-    <project name="LineageOS/android_external_bson" path="external/bson" />
-    <project name="LineageOS/android_system_qcom" path="system/qcom" />
-    <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" />
-    <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" />
+    <project path="device/qcom/sepolicy-legacy" name="LineageOS/android_device_qcom_sepolicy" revision="lineage-18.1-legacy" remote="lineage"/>
 
-    <!-- -->
+    <!-- use LOS ril for BOARD_PROVIDES_LIBRIL (for real) -->
+    <remove-project path="hardware/ril"/>
+    <project name="LineageOS/android_hardware_ril" path="hardware/ril" revision="lineage-18.1" remote="lineage"/>
 
-    <project name="lwys-trash-oct23/device_samsung_a5lte" path="device/samsung/a5lte" revision="lineage-18.1" />
-    <project name="ChronoMonochrome/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" revision="lineage-18.1" />
-    <project name="ChronoMonochrome/proprietary_vendor_samsung" path="vendor/samsung" revision="lineage-18.1" />
+    <project name="LineageOS/android_external_bson" path="external/bson" revision="lineage-18.1" remote="lineage"/>
+    <project name="LineageOS/android_system_qcom" path="system/qcom" revision="lineage-18.1" remote="lineage"/>
+    <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" revision="lineage-18.1" remote="lineage"/>
+    <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" revision="lineage-18.1" remote="lineage"/>
 
-    <!-- twrp -->
-    <!--<project path="bootable/recovery-twrp" name="TeamWin/android_bootable_recovery" revision="android-11" groups="pdk" />-->
+    <project name="lwys-trash-oct23/android_device_samsung_a5lte" path="device/samsung/a5lte" revision="lineage-18.1" remote="githubm"/>
+    <project name="lwys-trash-oct23/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" revision="lineage-18.1" remote="githubm"/>
+    <project name="lwys-trash-oct23/proprietary_vendor_samsung" path="vendor/samsung" revision="lineage-18.1" remote="githubm"/>
 </manifest>
