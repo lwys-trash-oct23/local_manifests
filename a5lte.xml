@@ -20,6 +20,8 @@
     <!-- GCC 7.2 arm-eabi -->
     <!-- OK so now you may want to install multilib ... -->
     <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" revision="master" remote="githubm"/>
+    <remove-project path="prebuilts/build-tools"/>
+    <project path="prebuilts/build-tools" name="LineageOS/android_prebuilts_build-tools" revision="lineage-18.1" remote="lineage" clone-depth="1"/>
 
     <project path="device/qcom/sepolicy-legacy" name="LineageOS/android_device_qcom_sepolicy" revision="lineage-18.1-legacy" remote="lineage"/>
 
