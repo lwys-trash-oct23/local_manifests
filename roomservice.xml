@@ -16,10 +16,12 @@
     <!-- OK so now you may want to install multilib ... -->
     <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" revision="master"/>
 
-    <!-- For the build fix, temporary measure -->
+    <!-- For build fixs -->
     <remove-project path="hardware/qcom-caf/wlan" />
     <project path="hardware/qcom-caf/wlan" name="lwys-trash-oct23/android_hardware_qcom_wlan"
         revision="lineage-20.0-caf" />
+    <remove-project path="hardware/lineage/interfaces" />
+    <project path="hardware/lineage/interfaces" name="lwys-trash-oct23/android_hardware_lineage_interfaces" />
 
     <!-- not in 20.0 but we still use these -->
     <project name="LineageOS/android_system_tools_dtbtool" path="system/tools/dtbtool" revision="lineage-18.1" />
