@@ -3,7 +3,6 @@
 <!-- Imported-From: https://github.com/srkndenis/local_manifests/blob/lineage-18.1/local_manifests.xml -->
 
 <manifest>
-
     <!-- Samsung MSM8916 Common Repos -->
     <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common"/>
 
@@ -12,7 +11,7 @@
 
     <!-- GCC 7.2 arm-eabi -->
     <!-- OK so now you may want to install multilib ... -->
-    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" revision="master"/>
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" revision="master" clone-depth="1"/>
 
     <project name="LineageOS/android_external_bson" path="external/bson" />
     <project name="LineageOS/android_system_qcom" path="system/qcom" />
@@ -21,10 +20,7 @@
 
     <!-- -->
 
-    <project name="lwys-trash-oct23/device_samsung_a5lte" path="device/samsung/a5lte" revision="lineage-18.1" />
-    <project name="ChronoMonochrome/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" revision="lineage-18.1" />
-    <project name="ChronoMonochrome/proprietary_vendor_samsung" path="vendor/samsung" revision="lineage-18.1" />
-
-    <!-- twrp -->
-    <!--<project path="bootable/recovery-twrp" name="TeamWin/android_bootable_recovery" revision="android-11" groups="pdk" />-->
+    <project name="lwys-trash-oct23/device_samsung_a5lte" path="device/samsung/a5lte" />
+    <project name="lwys-trash-oct23/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" />
+    <project name="lwys-trash-oct23/proprietary_vendor_samsung" path="vendor/samsung" />
 </manifest>
