@@ -20,6 +20,7 @@
     <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" />
 
     <project name="lwys-trash-oct23/android_device_samsung_a5lte" path="device/samsung/a5lte" />
+    <project name="lwys-trash-oct23/android_device_samsung_a5ltezt" path="device/samsung/a5ltezt" />
     <project name="lwys-trash-oct23/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" />
     <project name="lwys-trash-oct23/proprietary_vendor_samsung" path="vendor/samsung" />
 </manifest>
